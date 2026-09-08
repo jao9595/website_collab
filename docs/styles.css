@@ -1,1 +1,22 @@
 /* css styles */
+
+
+/* Brite-style buttons */
+.btn {
+  border-width: 2px;
+  border-color: #000;
+  box-shadow: 3px 3px 0 0 #000;   /* hard offset shadow, no blur */
+  transform: translate(-3px, -3px);
+  margin: 3px 0 0 3px;             /* keeps layout from shifting */
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: none;
+  transform: translate(0, 0);      /* button "presses in" to meet its shadow */
+}
+
+.btn.disabled,
+.btn:disabled {
+  border-color: #000;
+}
